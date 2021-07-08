@@ -6,27 +6,79 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
+
   <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <h1 id="title">Ismail_Gemechu Survey Form</h1>
     <p id="description">This is a Survey form</p>
+    <p>Hello World, we are software developers!</p>
     <form id="survey-form">
-      <label for="name-label">Name</label>
-      <input id="name" type="text" placeholder="Name" required />
-      <label for="email">Email</label>
-      <input id="email" type="email" placeholder="Email" required />
-      <label for="age">Age</label>
-      <input
-        id="number"
-        type="number"
-        max="120"
-        min="10"
-        placeholder="Age"
-        required
-      />
+
+
+    
+      <div>
+        <label for="name" id="name-label">Name</label><br>
+        <input id="name" type="text" placeholder="Enter your name" required />
+      </div><br>
+      
+      <div>
+        <label for="email" id="email-label">Email</label><br>
+        <input id="email" type="email" placeholder="Enter your email" required />
+      </div><br>
+
+      <div>
+        <label for="age" id="number-label">Age</label><br>
+      <input id="number" type="number" max="120" min="10" placeholder="Age" required/>
+      </div><br>
+
+      <div>
+        <label for="microverse">Microverse developers</label><br>
+        <select id="dropdown">
+          <option id="student_name">Gemechu</option>
+          <option id="student_name">Ismail</option>
+          <option id="student_name">Others</option>
+        </select>
+      </div><br>
+
+      <div>
+        <label>Would you recommend Microverse to a friend?</label><br>
+        <input type="radio" name="Recommend_Microverse" value="definitely" id="definitely">
+        <label for="definitely">Definitely</label><br>
+        <input type="radio" name="Recommend_Microverse" value="MayBe" id="maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" name="Recommend_Microverse" value="NotSure" id="notsure">
+        <label for="notsure">Not sure</label><br>
+      </div><br>
+
+      <div>
+        <label>Microverse Technical skills</label><br>
+        <input type="checkbox" id="html&css" name="language1" value="HTML & CSS">
+        <label for="html&css"> HTML & CSS</label><br>
+
+        <input type="checkbox" id="ruby" name="language2" value="Ruby">
+        <label for="ruby"> Ruby</label><br>
+
+        <input type="checkbox" id="database" name="language3" value="Database"
+        <label for="database"> Database</label><br>
+
+        <input type="checkbox" id="javascript" name="language4" value="Javascript">
+        <label for="javascript"> Javascript</label><br>
+
+        <input type="checkbox" id="algorithms" name="language5" value="Algorithms">
+        <label for="algorithms"> Algorithms</label><br>        
+      </div><br>
+     
+
+      <div>
+        <label>Any comments or suggestions?</label><br>
+        <textarea placeholder="Enter your comment here...." cols="50" rows="5"></textarea>
+      </div><br>
+      
+      <button type="submit" id="submit">Submit</button>
+           
+      
     </form>
 
-    <p>Hello World, we are software developers!</p>
-
+    
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>
   </body>
